@@ -2,6 +2,9 @@
 	<PropertyGroup>
 		<TargetFramework>net7.0-ios</TargetFramework>
 		<OutputType>Exe</OutputType>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
 	
 	<PropertyGroup>
