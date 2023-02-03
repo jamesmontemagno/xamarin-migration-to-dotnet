@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0-android</TargetFramework>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<UseMauiEssentials>true</UseMauiEssentials>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.0.1" />
+		<PackageReference Include="Xamarin.Google.Android.Material" Version="1.7.0.2" />
+		<PackageReference Include="Plugin.InAppBilling" Version="6.7.0" />
+		<PackageReference Include="MonkeyCache.FileStore" Version="2.0.1" />
+	</ItemGroup>
+</Project>

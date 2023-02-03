@@ -106,9 +106,11 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
-    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0.1" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.0.1" />
+	<PackageReference Include="Xamarin.Google.Android.Material" Version="1.7.0.2" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+	<PackageReference Include="Plugin.InAppBilling" Version="6.7.0" />
+	<PackageReference Include="MonkeyCache.FileStore" Version="1.6.3" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
