@@ -1,14 +1,11 @@
-﻿using System;
-using Android.App;
-using Android.OS;
-using Android.Runtime;
+﻿using Android.Runtime;
 using Android.Views;
 using AndroidX.AppCompat.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.Snackbar;
 using Microsoft.Maui.ApplicationModel;
-using XamarinAndroidAppUpdated;
+using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
 namespace XamarinAndroidAppUpdated
 {
@@ -21,11 +18,12 @@ namespace XamarinAndroidAppUpdated
             Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
-
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;
+            
+            var fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
+            if(fab is not null)
+                fab.Click += FabOnClick;
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

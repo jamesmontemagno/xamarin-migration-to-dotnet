@@ -4,7 +4,8 @@
 		<OutputType>Exe</OutputType>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+		<ApplicationTitle>MyApp</ApplicationTitle>
+		<SupportedOSPlatformVersion>23</SupportedOSPlatformVersion>
 		<ApplicationId>com.companyname.myapp</ApplicationId>
 		<ApplicationVersion>1</ApplicationVersion>
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
